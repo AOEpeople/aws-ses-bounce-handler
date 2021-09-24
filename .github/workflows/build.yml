@@ -27,7 +27,7 @@ jobs:
 
       # Run build of the application
       - name: Run build
-        run: go build main.go -o aws-ses-bounce-handler
+        run: go build -o aws-ses-bounce-handler main.go
 
       - uses: actions/upload-artifact@v2
         with:
